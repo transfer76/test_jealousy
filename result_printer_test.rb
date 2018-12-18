@@ -29,4 +29,3 @@ class ResultPrinter
     end
   end
 end
-

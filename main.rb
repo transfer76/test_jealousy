@@ -26,9 +26,3 @@ until tester.finished?
 end
 
 printer.print_result(tester)
-
-
-
-
-
-
