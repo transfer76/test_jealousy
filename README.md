@@ -1,11 +1,10 @@
-# Welcome to the test Sociability
+# Тест на общительность
 
-## What's the test?
-The test write on **Ruby**. [link original](https://psylist.net/praktikum/00003.htm)
-The test Sociability will help you to know your level of sociability and communicability.
-The program ask 16 questions, you answer,at the end displaiyng test's result
+## Что такое "Тест на общительность"?
+[ссылка на оригинальный тест]Программа написана на языке Ruby. Тест поможет Вам узнать свой уовень общительности и комуникабельности
 
-## Getting Started
+## Правила
+Тест содержит 16 вопросов с вариантами ответов, разные ответы оцениваются по-разному. По окончанию теста на экране появиться результат, согласно набранных баллов.
+
+## Как запустить программу
 ```$ ruby main.rb```
-
-## Good Luck
