@@ -12,18 +12,13 @@ class ResultPrinter
   def print_result(tester)
     puts "Your result: #{tester.user_answer}"
 
-    if tester.user_answer >= 30
-      puts @results[0]
-    elsif tester.user_answer >= 25
-      puts @results[1]
-    elsif tester.user_answer >= 19
-      puts @results[2]
-    elsif tester.user_answer >= 14
-      puts @results[3]
-    elsif tester.user_answer >= 9
-      puts @results[4]
-    elsif tester.user_answer >= 4
-      puts @results[5]
+    case tester
+    when tester.user_answer >= 30 then puts @results[0]
+    when tester.user_answer >= 25 then puts @results[1]
+    when tester.user_answer >= 19 then puts @results[2]
+    when tester.user_answer >= 14 then puts @results[3]
+    when tester.user_answer >= 9 then puts @results[4]
+    when tester.user_answer >= 4 then puts @results[5]
     else
       puts @results[6]
     end
