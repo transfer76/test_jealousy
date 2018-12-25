@@ -1,5 +1,5 @@
-require_relative "test"
-require_relative "result_printer_test"
+require_relative "lib/test"
+require_relative "lib/result_printer_test"
 
 current_path = File.dirname(__FILE__)
 questions_path = current_path + "/data/questions.txt"
