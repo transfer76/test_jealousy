@@ -1,9 +1,8 @@
 require_relative "lib/test"
 require_relative "lib/result_printer_test"
 
-current_path = File.dirname(__FILE__)
-questions_path = current_path + "/data/questions.txt"
-results_path = current_path + "/data/results.txt"
+questions_path = __dir__ + "/data/questions.txt"
+results_path = __dir__ + "/data/results.txt"
 
 tester = Test.new(questions_path)
 printer = ResultPrinter.new(results_path)
