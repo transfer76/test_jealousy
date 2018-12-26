@@ -1,11 +1,10 @@
 class Test
   def initialize(question_path)
-    unless File.exist?(question_path)
-      abort "File with questions #{question_path} is not found"
+    if File.exist?(question_path)
+      file = File.new(question_path, 'r')
+      @questions = file.readlines
+      file.close
     end
-    file = File.new(question_path, 'r')
-    @questions = file.readlines
-    file.close
 
     @user_answer = 0
     @current_question = 0

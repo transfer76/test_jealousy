@@ -1,12 +1,10 @@
 class ResultPrinter
   def initialize(results_path)
-    unless File.exist?(results_path)
-      abort "File with results #{results_path} is not found"
+    if File.exist?(results_path)
+      file = File.new(results_path, 'r')
+      @results = file.readlines
+      file.close
     end
-
-    file = File.new(results_path, 'r')
-    @results = file.readlines
-    file.close
   end
 
   def print_result(tester)

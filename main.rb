@@ -1,5 +1,5 @@
 require_relative "lib/test"
-require_relative "lib/result_printer_test"
+require_relative "lib/result_printer"
 
 questions_path = __dir__ + "/data/questions.txt"
 results_path = __dir__ + "/data/results.txt"
